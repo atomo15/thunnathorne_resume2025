@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "fetch-data": "node scripts/fetch-data.js",
     "start": "next start",
     "lint": "next lint"
