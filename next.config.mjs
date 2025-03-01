@@ -1,6 +1,12 @@
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+// };
+
+// export default nextConfig;
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  output: 'export', // ตั้งค่า Static Export
 };
 
-export default nextConfig;
+module.exports = nextConfig;
