@@ -9,4 +9,5 @@ const nextConfig = {
   output: 'export', // ตั้งค่า Static Export
 };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
+export default nextConfig;
