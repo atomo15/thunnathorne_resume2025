@@ -32,5 +32,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          branch: gh-pages
+          artifact: github-pages
           folder: out
+          # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
