@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // ปิด Image Optimization สำหรับ Static Export
   },
+  basePath: '/thunnathorne_resume2025',
+  assetPrefix: '/thunnathorne_resume2025/',
 };
 
 // module.exports = nextConfig;
