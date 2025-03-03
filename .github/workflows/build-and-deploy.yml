@@ -33,6 +33,11 @@ jobs:
       - name: Build Next.js site
         run: |
           npm run build
+          
+      - name: Upload artifact 📡
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
 
       - name: Deploy to GitHub Pages
         id: deployment
