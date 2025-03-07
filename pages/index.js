@@ -17,7 +17,8 @@ function getShortenedUrl(url, platform) {
     return match ? match[1] : cleanUrl;
   } else if (platform === 'Portfolio') {
     // แสดงเฉพาะโดเมนหลัก (เช่น "thunnathorne-portfolio.com" จาก "https://thunnathorne-portfolio.com/projects")
-    return new URL(cleanUrl).hostname.replace('www.', '');
+    // return new URL(cleanUrl).hostname.replace('www.', '');
+    return "thunnathorne_resume";
   }
   return cleanUrl; // สำหรับ Email และ Phone
 }
