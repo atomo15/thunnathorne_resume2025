@@ -69,3 +69,25 @@ npx serve@latest out
 ```
 Open <mark>`http://localhost:3000`</mark> (or <mark>`http://localhost:3000/thunnathorne_resume2025`</mark> if using a subpath) in your browser.
 
+### 6. Build for Production
+To prepare the site for deployment:
+```bash
+npx next build
+npx next export
+```
+**Project Structure**
+
+thunnathorne_resume2025/
+├── public/          # Static assets (e.g., profile.jpg)
+├── pages/           # Next.js pages (e.g., index.js)
+├── scripts/         # Custom scripts (e.g., fetch-data.js)
+├── styles/          # CSS files (e.g., globals.css with Tailwind)
+├── .github/
+│   └── workflows/
+│       └── build-and-deploy.yml # GitHub Actions workflows
+├── secrets/         # Google Credentials (not committed)
+├── out/             # Static export output
+├── next.config.js   # Next.js configuration
+├── package.json     # Project dependencies and scripts
+├── README.md        # This file
+└── data.js          # Generated data file from Google Sheets
