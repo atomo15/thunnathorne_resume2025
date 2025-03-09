@@ -90,3 +90,20 @@ thunnathorne_resume2025/
 - ├── <mark>package.json</mark>     # Project dependencies and scripts
 - ├── <mark>README.md</mark>        # This file
 - └── <mark>data.js</mark>          # Generated data file from Google Sheets
+
+## Deployment
+
+**GitHub Pages**
+
+- The site is deployed to GitHub Pages using the `gh-pages` branch.
+- Automated deployment is handled by a GitHub Actions workflow (`build-and-deploy.yml`).
+- **Configuration:**
+  - **Source:** Deploy from `gh-pages` branch
+  - **Build Output Directory:** `/`
+  - Access the live site at <https://atomo15.github.io/thunnathorne_resume2025>.
+
+**Deployment Steps**
+
+1. Push changes to the `main` branch to trigger the GitHub Actions workflow.
+2. The workflow builds the site, fetches data, and deploys the `out/` directory to `gh-pages`.
+3. Verify deployment status in the **Actions** tab.
