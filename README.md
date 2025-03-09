@@ -47,13 +47,6 @@ npm install googleapis
 To fetch data from Google Sheets, you need a Service Account JSON Key:
 - Create a Service Account in <mark>Google Cloud Console</mark>.
 - Download the JSON key file (e.g., <mark>`credentials.json`</mark>).
-- Place it in a <mark>`secrets/`</mark> directory (e.g., <mark>`secrets/credentials.json`</mark>) and add <mark>`secrets/`</mark> to <mark>`.gitignore`</mark>:
-```bash
-echo "secrets/credentials.json" >> .gitignore
-git add .gitignore
-git commit -m "Add credentials.json to .gitignore"
-git push origin main
-```
 - Set the <mark>GOOGLE_CREDENTIALS</mark> environment variable:
 ```bash
 export GOOGLE_CREDENTIALS=$(cat secrets/credentials.json)
