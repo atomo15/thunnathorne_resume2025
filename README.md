@@ -31,3 +31,14 @@ Before setting up the project, ensure you have the following installed:
 ```bash
 git clone https://github.com/atomo15/thunnathorne_resume2025.git
 cd thunnathorne_resume2025
+```
+
+### 2. Install Dependencies
+Install the required Node.js packages:
+```bash
+npm install
+```
+Ensure the <mark>`googleapis`</mark> package is installed for Google Sheets API integration:
+```bash
+npm install googleapis
+```
