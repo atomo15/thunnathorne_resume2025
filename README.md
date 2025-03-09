@@ -75,8 +75,7 @@ To prepare the site for deployment:
 npx next build
 npx next export
 ```
-**Project Structure**
-
+## Project Structure
 thunnathorne_resume2025/
 - ├── <mark>public/</mark>          # Static assets (e.g., <mark>profile.jpg</mark>)
 - ├-── <mark>pages/</mark>           # Next.js pages (e.g., <mark>index.js</mark>)
