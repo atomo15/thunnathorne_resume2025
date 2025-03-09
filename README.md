@@ -59,3 +59,13 @@ Run the custom script to fetch data from Google Sheets and generate data.js:
 npm run fetch-data
 ```
 This script ( <mark>scripts/fetch-data.js</mark> ) uses the Google Sheets API to pull data and save it as <mark>data.js</mark> for use in the Next.js app.
+
+### 5. Run the Development Server
+Since this project uses output: 'export', build and serve the static files locally:
+```bash
+npx next build
+npx next export
+npx serve@latest out
+```
+Open <mark>`http://localhost:3000`</mark> (or <mark>`http://localhost:3000/thunnathorne_resume2025`</mark> if using a subpath) in your browser.
+
