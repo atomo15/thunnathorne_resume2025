@@ -58,4 +58,4 @@ Run the custom script to fetch data from Google Sheets and generate data.js:
 ```bash
 npm run fetch-data
 ```
-This script (<mark>scripts/fetch-data.js</mark>) uses the Google Sheets API to pull data and save it as <mark>data.js</mark> for use in the Next.js app.
+This script ( <mark>scripts/fetch-data.js</mark> ) uses the Google Sheets API to pull data and save it as <mark>data.js</mark> for use in the Next.js app.
