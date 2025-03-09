@@ -75,14 +75,13 @@ To prepare the site for deployment:
 npx next build
 npx next export
 ```
----
 **Project Structure**
 
-thunathorne_resume2025/
+thunnathorne_resume2025/
 ├── public/                  # Static assets (e.g., profile.jpg)
 ├── pages/                   # Next.js pages (e.g., index.js)
 ├── scripts/                 # Custom scripts (e.g., fetch-data.js)
-├── styles/                  # CSS files (e.g., global.css with Tailwind)
+├── styles/                 # CSS files (e.g., global.css with Tailwind)
 ├── .github/                 # GitHub Actions workflows
 │   └── workflows/
 │       └── build-and-deploy.yml
