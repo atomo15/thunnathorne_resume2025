@@ -52,3 +52,10 @@ To fetch data from Google Sheets, you need a Service Account JSON Key:
 export GOOGLE_CREDENTIALS=$(cat secrets/credentials.json)
 ```
 - Share your Google Sheet with the Service Account email (found in the JSON key) and note the Sheet ID (from the Sheet URL: <mark>https://docs.google.com/spreadsheets/d/SHEET_ID/edit</mark>).
+
+### 4. Fetch Data
+Run the custom script to fetch data from Google Sheets and generate data.js:
+```bash
+npm run fetch-data
+```
+This script (<mark>scripts/fetch-data.js</mark>) uses the Google Sheets API to pull data and save it as <mark>data.js</mark> for use in the Next.js app.
