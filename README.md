@@ -78,16 +78,16 @@ npx next export
 **Project Structure**
 
 thunnathorne_resume2025/
-├── public/                  # Static assets (e.g., profile.jpg)
-├── pages/                   # Next.js pages (e.g., index.js)
-├── scripts/                 # Custom scripts (e.g., fetch-data.js)
-├── styles/                 # CSS files (e.g., global.css with Tailwind)
-├── .github/                 # GitHub Actions workflows
-│   └── workflows/
-│       └── build-and-deploy.yml
-├── secrets/                 # Google Credentials (not committed)
-├── out/                     # Static export output
-├── next.config.js           # Next.js configuration
-├── package.json             # Project dependencies and scripts
-├── README.md                # This file
-└── data.js                  # Generated data file from Google Sheets
+- ├── <mark>public/</mark>          # Static assets (e.g., <mark>profile.jpg</mark>)
+- ├-── <mark>pages/</mark>           # Next.js pages (e.g., <mark>index.js</mark>)
+- ├── <mark>scripts/</mark>         # Custom scripts (e.g., <mark>fetch-data.js</mark>)
+- ├── <mark>styles/</mark>          # CSS files (e.g., <mark>globals.css</mark> with Tailwind)
+- ├── <mark>.github/</mark>
+- │   └── <mark>workflows/</mark>
+- │       └── <mark>build-and-deploy.yml</mark> # GitHub Actions workflows
+- ├── <mark>secrets/</mark>         # Google Credentials (not committed)
+- ├── <mark>out/</mark>             # Static export output
+- ├── <mark>next.config.js</mark>  # Next.js configuration
+- ├── <mark>package.json</mark>     # Project dependencies and scripts
+- ├── <mark>README.md</mark>        # This file
+- └── <mark>data.js</mark>          # Generated data file from Google Sheets
