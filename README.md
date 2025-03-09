@@ -107,3 +107,21 @@ thunnathorne_resume2025/
 1. Push changes to the `main` branch to trigger the GitHub Actions workflow.
 2. The workflow builds the site, fetches data, and deploys the `out/` directory to `gh-pages`.
 3. Verify deployment status in the **Actions** tab.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the license terms.
+
+## Contact
+
+- **Author:** Thunnathorne Synhiranakkrakul
+- **GitHub:** [atomo15](https://github.com/atomo15)
+- **Email:** thunnathorne@gmail.com
+
+## Acknowledgments
+
+- **Next.js:** For the powerful React framework.
+- **Tailwind CSS:** For the utility-first styling.
+- **Google Sheets API:** For dynamic data integration.
+- **GitHub Actions:** For automated deployment.
+- **serve:** For local static file serving.
