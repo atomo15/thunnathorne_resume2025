@@ -39,7 +39,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`min-h-screen ${isDark ? 'bg-gray-900 text-gray-100' : 'bg-gray-100 text-gray-900'} font-sans`}>
+    <div className={`min-h-screen overflow-x-hidden ${isDark ? 'bg-gray-900 text-gray-100' : 'bg-gray-100 text-gray-900'} font-sans`}>
 
       {/* <button
         onClick={toggleTheme}
