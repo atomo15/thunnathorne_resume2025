@@ -1,10 +1,11 @@
 # Thunnathorne Synhiranakkrakul  
 **Software Engineer | Full-Stack Developer**  
-Columbia, MO 65201 | [thunnathorne@gmail.com](mailto:thunnathorne@gmail.com) | [linkedin.com/in/thunnathorne-synhiranakkrakul](https://linkedin.com/in/thunnathorne-synhiranakkrakul) | [github.com/atomo15](https://github.com/atomo15)  
+127 S 8th street, Columbia, Missouri 65201 | (+1) 573-825-2952 | [thunnathorne@gmail.com](mailto:thunnathorne@gmail.com)
+[linkedin.com/in/thunnathorne-synhiranakkrakul](https://linkedin.com/in/thunnathorne-synhiranakkrakul) | [github.com/atomo15](https://github.com/atomo15)  
 ---
 
 ## Professional Summary  
-Creative Software Engineer with 3+ years of hands-on experience crafting innovative solutions in full-stack development, network programming, and robotics. Leveraged Python, PHP, JavaScript, and tools like Next.js and Flutter to deliver standout projects, from a voice-enabled Boston Dynamics Spot robot app to a network suite managing 30,000+ nodes for a top ISP. Thrive on automating processes, bolstering security, and driving impact through Agile teamwork. Eager to push the limits of technology and deliver transformative solutions at [target company].
+Creative Software Engineer with 3+ years of hands-on experience crafting innovative solutions in full-stack development, network programming, and robotics. Leveraged Python, PHP, JavaScript, and tools like Next.js and Flutter to deliver standout projects, from a voice-enabled Boston Dynamics Spot robot app to a network suite managing 30,000+ nodes for a top ISP. Thrive on automating processes, bolstering security, and driving impact through Agile teamwork. Eager to push the limits of technology and deliver transformative solutions at the company.
 
 ---
 
