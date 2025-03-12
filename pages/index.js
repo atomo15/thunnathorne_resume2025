@@ -270,7 +270,7 @@ export default function Home() {
 
       <section id="projects" className="p-6 bg-white dark:bg-dark-card mt-8">
         <h2 className="text-2xl font-bold mb-6 text-gray-900">Projects</h2>
-        <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
+        <div className="grid gap-6 md:overflow-x-auto grid-cols-1 lg:grid-cols-2">
           {projects.map((proj) => (
             <div
               key={proj.projectName}
