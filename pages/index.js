@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
 
-      <section id="experience" className="p-6 bg-white">
+      <section id="experience" className="p-6 bg-gray-100 dark:bg-dark-card mt-8">
         <section id="relevant-experience" className="p-6 bg-gray-300 dark:bg-dark-card">
           <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-dark-text">Relevant Experience</h2>
           <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1">
