@@ -95,89 +95,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="experience" className="p-6 bg-white">
-        <section id="relevant-experience" className="p-6 bg-gray-300 dark:bg-dark-card">
-          <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-dark-text">Relevant Experience</h2>
-          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1">
-            {relevantExperience && Array.isArray(relevantExperience) && relevantExperience.length > 0 ? (
-              relevantExperience.map((exp) => (
-                <div
-                  key={exp.company}
-                  className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-700 dark:to-blue-900 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-blue-400 dark:border-blue-300"
-                >
-                  <p className="text-sm text-gray-100 dark:text-dark-text">
-                    {exp.startDate} - {exp.endDate}
-                  </p>
-                  <h3 className="text-xl font-semibold text-white dark:text-dark-text">{exp.jobTitle || 'N/A'}</h3>
-                  <p className="text-gray-200 dark:text-dark-muted mt-1">{exp.company || 'N/A'}</p>
-                  <p className="text-gray-300 dark:text-dark-muted mt-1">{exp.location || 'N/A'}</p>
-                  <p
-                    className="text-gray-100 dark:text-dark-text mt-2 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: exp.description || 'No description available' }}
-                  ></p>
-                </div>
-              ))
-            ) : (
-              <p className="text-gray-400 dark:text-dark-muted">No relevant experience available.</p>
-            )}
-          </div>
-        </section>
-
-        <section id="other-experience" className="p-6 bg-gray-300 dark:bg-dark-card">
-          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-dark-text">Other Valuable Experience</h2>
-          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1">
-            {otherExperience && Array.isArray(otherExperience) && otherExperience.length > 0 ? (
-              otherExperience.map((exp) => (
-                <div
-                  key={exp.company}
-                  className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-gray-900 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-gray-400 dark:border-gray-300"
-                >
-                  <p className="text-sm text-gray-100 dark:text-dark-text">
-                    {exp.startDate} - {exp.endDate}
-                  </p>
-                  <h3 className="text-xl font-semibold text-white dark:text-dark-text">{exp.jobTitle || 'N/A'}</h3>
-                  <p className="text-gray-200 dark:text-dark-muted mt-1">{exp.company || 'N/A'}</p>
-                  <p className="text-gray-300 dark:text-dark-muted mt-1">{exp.location || 'N/A'}</p>
-                  <p
-                    className="text-gray-100 dark:text-dark-text mt-2 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: exp.description || 'No description available' }}
-                  ></p>
-                </div>
-              ))
-            ) : (
-              <p className="text-gray-400 dark:text-dark-muted">No other valuable experience available.</p>
-            )}
-          </div>
-        </section>
-
-        <section id="leadership-experience" className="p-6 bg-gray-300 dark:bg-dark-card">
-          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-dark-text">Leadership Experience</h2>
-          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1">
-            {leadershipExperience && Array.isArray(leadershipExperience) && leadershipExperience.length > 0 ? (
-              leadershipExperience.map((exp) => (
-                <div
-                  key={exp.company}
-                  className="bg-gradient-to-r from-green-600 to-green-800 dark:from-green-700 dark:to-green-900 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-green-400 dark:border-green-300"
-                >
-                  <p className="text-sm text-gray-100 dark:text-dark-text">
-                    {exp.startDate} - {exp.endDate}
-                  </p>
-                  <h3 className="text-xl font-semibold text-white dark:text-dark-text">{exp.jobTitle || 'N/A'}</h3>
-                  <p className="text-gray-200 dark:text-dark-muted mt-1">{exp.company || 'N/A'}</p>
-                  <p className="text-gray-300 dark:text-dark-muted mt-1">{exp.location || 'N/A'}</p>
-                  <p
-                    className="text-gray-100 dark:text-dark-text mt-2 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: exp.description || 'No description available' }}
-                  ></p>
-                </div>
-              ))
-            ) : (
-              <p className="text-gray-400 dark:text-dark-muted">No leadership experience available.</p>
-            )}
-          </div>
-        </section>
-      </section>
-
       <section id="technical-skills" className="p-6 bg-gray-100 dark:bg-dark-card mt-8">
         <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-dark-text">Technical Skills</h2>
         <div className="flex flex-wrap gap-4">
@@ -268,6 +185,91 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section id="experience" className="p-6 bg-white">
+        <section id="relevant-experience" className="p-6 bg-gray-300 dark:bg-dark-card">
+          <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-dark-text">Relevant Experience</h2>
+          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1">
+            {relevantExperience && Array.isArray(relevantExperience) && relevantExperience.length > 0 ? (
+              relevantExperience.map((exp) => (
+                <div
+                  key={exp.company}
+                  className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-700 dark:to-blue-900 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-blue-400 dark:border-blue-300"
+                >
+                  <p className="text-sm text-gray-100 dark:text-dark-text">
+                    {exp.startDate} - {exp.endDate}
+                  </p>
+                  <h3 className="text-xl font-semibold text-white dark:text-dark-text">{exp.jobTitle || 'N/A'}</h3>
+                  <p className="text-gray-200 dark:text-dark-muted mt-1">{exp.company || 'N/A'}</p>
+                  <p className="text-gray-300 dark:text-dark-muted mt-1">{exp.location || 'N/A'}</p>
+                  <p
+                    className="text-gray-100 dark:text-dark-text mt-2 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: exp.description || 'No description available' }}
+                  ></p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-400 dark:text-dark-muted">No relevant experience available.</p>
+            )}
+          </div>
+        </section>
+
+        <section id="other-experience" className="p-6 bg-gray-300 dark:bg-dark-card">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-dark-text">Other Valuable Experience</h2>
+          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1">
+            {otherExperience && Array.isArray(otherExperience) && otherExperience.length > 0 ? (
+              otherExperience.map((exp) => (
+                <div
+                  key={exp.company}
+                  className="bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-700 dark:to-gray-900 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-gray-400 dark:border-gray-300"
+                >
+                  <p className="text-sm text-gray-100 dark:text-dark-text">
+                    {exp.startDate} - {exp.endDate}
+                  </p>
+                  <h3 className="text-xl font-semibold text-white dark:text-dark-text">{exp.jobTitle || 'N/A'}</h3>
+                  <p className="text-gray-200 dark:text-dark-muted mt-1">{exp.company || 'N/A'}</p>
+                  <p className="text-gray-300 dark:text-dark-muted mt-1">{exp.location || 'N/A'}</p>
+                  <p
+                    className="text-gray-100 dark:text-dark-text mt-2 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: exp.description || 'No description available' }}
+                  ></p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-400 dark:text-dark-muted">No other valuable experience available.</p>
+            )}
+          </div>
+        </section>
+
+        <section id="leadership-experience" className="p-6 bg-gray-300 dark:bg-dark-card">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-dark-text">Leadership Experience</h2>
+          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1">
+            {leadershipExperience && Array.isArray(leadershipExperience) && leadershipExperience.length > 0 ? (
+              leadershipExperience.map((exp) => (
+                <div
+                  key={exp.company}
+                  className="bg-gradient-to-r from-green-600 to-green-800 dark:from-green-700 dark:to-green-900 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-green-400 dark:border-green-300"
+                >
+                  <p className="text-sm text-gray-100 dark:text-dark-text">
+                    {exp.startDate} - {exp.endDate}
+                  </p>
+                  <h3 className="text-xl font-semibold text-white dark:text-dark-text">{exp.jobTitle || 'N/A'}</h3>
+                  <p className="text-gray-200 dark:text-dark-muted mt-1">{exp.company || 'N/A'}</p>
+                  <p className="text-gray-300 dark:text-dark-muted mt-1">{exp.location || 'N/A'}</p>
+                  <p
+                    className="text-gray-100 dark:text-dark-text mt-2 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: exp.description || 'No description available' }}
+                  ></p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-400 dark:text-dark-muted">No leadership experience available.</p>
+            )}
+          </div>
+        </section>
+      </section>
+
+      
       <section id="projects" className="p-6 bg-white dark:bg-dark-card mt-8">
         <h2 className="text-2xl font-bold mb-6 text-gray-900">Projects</h2>
         <div className="grid gap-6 md:overflow-x-auto grid-cols-1 lg:grid-cols-2">
