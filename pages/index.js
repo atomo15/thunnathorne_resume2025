@@ -274,9 +274,9 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6 text-gray-900">Projects</h2>
         <div className="grid gap-6 md:overflow-x-auto grid-cols-1 lg:grid-cols-2">
           {projects.map((proj) => (
-            <div
+            <div 
               key={proj.projectName}
-              className="bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-gray-50 p-4 overflow-x-scroll rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-800">{proj.projectName}</h3>
               <p className="text-sm text-gray-400 dark:text-dark-muted mt-1">
